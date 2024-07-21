@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="<%= require('../media/travel-icon.png') %>"
+    />
+    
+    <title>Let's Travel</title>
+  </head>
+  <body>
+    <div class="grid-container-front-page">
+      <div class="grid-header banner">
+        <img src="<%= require('../media/banner.jpg') %>" alt="banner" />
+      </div>
+      <header class="grid-menu menu-container">
+        <a href="index.html" class="menu-item">HOME</a>
+        <a href="index.html" class="menu-item">ABOUT</a>
+        <a href="index.html" class="menu-item">CONTACT</a>
+        <a href="index.html" class="menu-item">PRIVACY POLICY</a>
+      </header>
+      <form action="" class="grid-form">
+        <label for="location">Location</label><br />
+        <input
+          type="text"
+          id="location"
+          name="location"
+          placeholder="location"
+          value="london"
+        />
+        <br />
+        <label for="startDate">Start Date:</label><br />
+        <input
+          type="date"
+          id="startDate"
+          name="date"
+          value="2024-07-22"
+        /><br /><br />
+        <input type="submit" value="Check weather" id="checkWeather" />
+      </form>
+      <section class="grid-content container-forecast">
+        <article class="location-item">
+          <!-- <img
+            id="location-picture"
+            src="<%= require('../media/300px-London_collage.jpg') %>"
+            alt="London"
+          /> -->
+          <ul>
+            <li id="country">Your location: London</li>
+            <li id="date">Date: 2024/07/22</li>
+            <li id="city-name">Nation: United Kingdom</li>
+            <li id="weather">Weather: Light rain</li>
+            <li id="temp">Tempature: 2.8</li>
+          </ul>
+        </article>
+      </section>
+      <section class="grid-sidebar">
+        <h1>About me</h1>
+        <img src="<%= require('../media/avatar.avif') %>" alt="Avatar" />
+        <h3>Lê Đức Tùng</h3>
+        <blockquote>
+          Là một lập trình viên đang trong hành trình chinh phục nghệ thuật
+          thiết kế giao diện web, tôi không ngừng trau dồi kỹ năng với HTML,
+          CSS, JavaScript và các thư viện hỗ trợ đắc lực khác. Mục tiêu của tôi
+          là kiến tạo nên những trải nghiệm trực tuyến độc đáo và ấn tượng, mang
+          đến sự hài lòng tuyệt đối cho người dùng. Mỗi dòng code tôi viết ra
+          đều như nét vẽ, góp phần tạo nên bức tranh tổng thể hài hòa về mặt
+          thẩm mỹ và tối ưu về mặt chức năng. Tôi tin rằng, một giao diện web
+          đẹp không chỉ thu hút người dùng ở cái nhìn đầu tiên mà còn là chìa
+          khóa để giữ chân họ, khơi gợi sự thích thú và truyền tải thông điệp
+          hiệu quả.
+        </blockquote>
+        <button>Read More</button>
+      </section>
+      <footer class="grid-social">
+        <a href="https://twitter.com/" class="menu-item"
+          ><img src="<%= require('../media/twitter-logo.png') %>" alt="twitter"
+        /></a>
+        <a href="https://www.facebook.com/" class="menu-item"
+          ><img src="<%= require('../media/facebook.png') %>" alt="facebook"
+        /></a>
+        <a href="https://www.linkedin.com/" class="menu-item"
+          ><img src="<%= require('../media/linkedin-icon.png') %>" alt="linkedin"
+        /></a>
+      </footer>
+    </div>
+  </body>
+</html>

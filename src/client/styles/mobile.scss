@@ -1,0 +1,179 @@
+/* On screens that are 480px wide or less */
+@media (max-width: 480px) {
+  .banner > img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    background: none; /* Remove unnecessary background properties */
+  }
+
+  .grid-container-front-page {
+    width: 100%; /* Make the grid container responsive */
+    display: grid;
+    grid-template-areas:
+      'header'
+      'menu'
+      'form'
+      'side'
+      'main'
+      'social'
+      'footer'; /* Rearrange grid areas for better flow */
+    gap: 10px; /* Increase gap for better spacing */
+    padding: 10px; /* Increase padding for better spacing */
+  }
+
+  .grid-menu {
+    grid-area: menu;
+    width: 100%;
+    height: auto;
+  }
+
+  .grid-form {
+    grid-area: form;
+    font-size: 1rem; /* Use relative font sizes */
+  }
+
+  .grid-form > input {
+    font-size: 1rem;
+  }
+
+  .grid-content-post {
+    grid-area: main; /* Use "main" for the main content area */
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .grid-sidebar {
+    grid-area: side;
+    margin-top: 20px; /* Add spacing between form and sidebar */
+    text-align: center;
+    width: 100%;
+    background-color: darkgray;
+    border-radius: 5px;
+    padding: 15px; /* Add padding to the sidebar */
+  }
+
+  .grid-sidebar p {
+    line-height: 1.8;
+    font-size: 0.875rem;
+  }
+
+  .grid-sidebar h1 {
+    font-size: 1.5rem;
+  }
+
+  .grid-sidebar h3 {
+    font-size: 1.25rem;
+  }
+
+  .grid-sidebar blockquote {
+    font-size: 1.125rem;
+  }
+
+  .grid-footer {
+    grid-area: footer;
+    width: 100%;
+  }
+
+  .grid-social {
+    grid-area: social;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center social icons */
+    margin-bottom: 10px; /* Add spacing below social icons */
+  }
+
+  .grid-social > a > img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px; /* Add spacing between social icons */
+  }
+
+  /* Menu */
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    padding: 10px; /* Reduce padding */
+    margin-top: 10px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .menu-item {
+    font-size: 0.875rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    justify-items: center;
+    width: 100%; /* Make menu items full width */
+    text-align: center; /* Center menu text */
+    padding: 8px 0; /* Add padding to menu items */
+  }
+
+  /* container recipe */
+  .container-forecast {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr; /* Use a single column layout */
+    grid-gap: 10px;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .location-item a > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .location-item a p {
+    font-size: 0.875rem;
+    color: #f5b944ff;
+  }
+
+  .grid-content-post h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .grid-content-post p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+
+  .grid-content-post h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+
+  .grid-content-post ul li {
+    line-height: 1.8;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .grid-content-post ol li {
+    line-height: 1.8;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .grid-content-post img {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid-content-post figure {
+    text-align: center;
+    margin: 0; /* Remove default figure margin */
+  }
+
+  .grid-content-post figure figcaption {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+}
