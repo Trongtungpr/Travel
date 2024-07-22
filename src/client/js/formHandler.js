@@ -91,12 +91,20 @@ const updateUiWaiting = () => {
 
 // Local Storage
 const getDataFromLocalStorage = () => {
+  const locationPicture = document.getElementById("location-picture"); // Get the element
+
+  if (locationPicture) { // Check if the element exists
+    locationPicture.src = localStorage.getItem('location-picture') || '';
+  } else {
+    console.error("Element with id 'location-picture' not found.");
+  }
+
   document.getElementById("country").innerHTML = localStorage.getItem('country') || '';
   document.getElementById("date").innerHTML = localStorage.getItem('date') || '';
   document.getElementById("city-name").innerHTML = localStorage.getItem('city_name') || '';
   document.getElementById("weather").innerHTML = localStorage.getItem('weather') || '';
   document.getElementById("temp").innerHTML = localStorage.getItem('temp') || '';
-  document.getElementById("location-picture").src = localStorage.getItem('location-picture') || '';
+  document.getElementById("location-picture").innerHTML = localStorage.getItem('location-picture') || '';
 }
 
 export { checkWeatherSubmit, updateUI, updateUiWaiting, getDataFromLocalStorage };
